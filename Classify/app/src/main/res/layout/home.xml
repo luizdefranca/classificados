@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="classify.domain.com.classify.Home"
+    android:orientation="vertical"
+    android:baselineAligned="true"
+    android:focusableInTouchMode="true"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_bkg"
+            android:background="#111"
+            android:alpha="0.5"
+            android:layout_above="@+id/tabBar"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:id="@+id/keywordTxt"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="type something and hit Search"
+            android:background="#f1f1f1"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:imeOptions="actionSearch"
+            android:layout_height="34dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+        <!-- TAB BAR -->
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabBar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/tab_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/tab_home"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:paddingTop="35dp"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="10dp"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/tab_fav"
+                android:textAllCaps="false"
+                android:background="@drawable/tab_favorites"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="60dp"
+                android:paddingTop="35dp"
+                android:text="Favorites"
+                android:textSize="10dp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/tab_account"
+                android:textAllCaps="false"
+                android:background="@drawable/tab_account"
+                android:layout_marginLeft="60dp"
+                android:paddingTop="35dp"
+                android:text="Account"
+                android:textSize="10dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/keywordTxt"
+            android:layout_above="@+id/tabBar"
+            android:layout_alignParentStart="true"
+            android:id="@+id/catGridView"
+            android:layout_marginTop="10dp"
+            />
+        <!-- END TAB BAR -->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

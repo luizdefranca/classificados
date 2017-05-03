@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".BrowseAds">
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Long Tap to Favorite"
+        android:id="@+id/textView2"
+        android:textColor="#333"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:id="@+id/adsListView"
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="8dp"
+        android:layout_above="@+id/admobBanner" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admobBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ADMOB_BANNER_UNIT_ID"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

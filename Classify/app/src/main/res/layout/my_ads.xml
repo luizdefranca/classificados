@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyAds">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/myAdsListView"
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice"
+        android:layout_above="@+id/admobBanner"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="5dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admobBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ADMOB_BANNER_UNIT_ID"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Long Tap to delete an Ad"
+        android:id="@+id/textView16"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="12dp" />
+
+
+</RelativeLayout>

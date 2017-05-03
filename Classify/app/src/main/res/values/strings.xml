@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- IMPORTANT: REPLACE THIS STRING WITH THE NEW NAME YOU'LL GIVE TO THIS APP -->
+    <string name="app_name">Classify</string>
+
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN BANNER UNIT ID YOU'LL GET FROM http://apps.admob.com -->
+    <string name="ADMOB_BANNER_UNIT_ID">ca-app-pub-3120536913205473/5975042732</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN FACEBOOK APP ID YOU'LL GET ON https://developers.facebook.com/apps/ -->
+    <string name="facebook_app_id">1583796018568051</string>
+
+
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_launch_screen">LaunchScreen</string>
+
+</resources>

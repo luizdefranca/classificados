@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="classify.domain.com.classify">
+
+    <!-- Internet permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:name=".Configs"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- For Facebook SDK -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+        <!-- Other Activities -->
+        <activity android:name=".Home" />
+        <activity android:name=".BrowseAds" />
+        <activity android:name=".Login" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".TermsOfUse" />
+        <activity android:name=".ShowSingleAd" />
+        <activity android:name=".Favorites" />
+        <activity android:name=".AccountScreen" />
+        <activity android:name=".MyAds" />
+        <activity android:name=".PostAd"></activity>
+    </application>
+
+</manifest>

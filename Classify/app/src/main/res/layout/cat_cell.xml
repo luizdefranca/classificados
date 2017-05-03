@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/jobs"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/chCatImage"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:text="loading..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chCatImage"
+        android:id="@+id/chCatTitleTxt"
+        android:layout_alignEnd="@+id/chCatImage"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:layout_alignStart="@+id/chCatImage"/>
+
+</RelativeLayout>
